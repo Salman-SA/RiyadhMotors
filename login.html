@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Riyadh Motors</title>
+    <link rel="stylesheet" href="styles/login-styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html" class="logo-link"></a>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="language-switch">
+    <a href="login-ar.html" >العربية</a>
+		</div>
+
+    </nav>
+
+    <section id="login">
+        <div class="content">
+            <form action="#" method="post">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <div class="divider"></div> <!-- Thin line divider -->
+
+                <button type="submit">Sign In</button>
+				<div class="divider"></div> <!-- Thin line divider -->
+            </form>
+            
+           
+
+            <button class="google-signin">Sign in with Google</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Riyadh Motors / 2024 IMAM / CCIS / IT dept.</p>
+    </footer>
+	
+	<script> document.getElementById('arabic-link').addEventListener('click', function(event) { event.preventDefault(); // Prevent default link behavior // Get the current page URL var currentPage = window.location.pathname; // Switch to the corresponding Arabic page var arabicPage = currentPage.replace('.html', '-ar.html'); // Navigate to the Arabic page window.location.href = arabicPage; }); </script>
+	
+	
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - الرياض موتورز</title>
+    <link rel="stylesheet" href="styles/home-styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index-ar.html" class="logo-link"></a>
+        </div>
+        <ul>
+            <li><a href="home-ar.html">الرئيسية</a></li>
+            <li><a href="about-ar.html">من نحن</a></li>
+            <li><a href="contact-ar.html">اتصل بنا</a></li>
+            <li><a href="login-ar.html">تسجيل الدخول</a></li>
+        </ul>
+        <div class="language-switch">
+            <a href="home.html">English</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="content">
+            <div class="car">
+                <img src="styles/imgs/mercedes.jpg" alt="Mercedes S Class">
+                <h2>مرسيدس الفئة S</h2>
+                <p>743,653 ريال سعودي</p>
+                <button onclick="location.href='https://www.mercedes-benz.com/en/'">مراجعة التفاصيل</button>
+            </div>
+            <div class="car">
+                <img src="styles/imgs/bmw.jpg" alt="BMW 7 Series">
+                <h2>بي إم دبليو الفئة 7</h2>
+                <p>540,421 ريال سعودي</p>
+                <button onclick="location.href='https://www.bmw.com/en/index.html'">مراجعة التفاصيل</button>
+            </div>
+            <!-- Add more car listings if needed for testing -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© Riyadh Motors / 2024 IMAM / CCIS / IT dept.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.querySelector('footer');
+            var contentHeight = document.documentElement.scrollHeight;
+            var windowHeight = window.innerHeight;
+            var scrollPosition = window.pageYOffset;
+
+            if ((windowHeight + scrollPosition) >= (contentHeight - 10)) { // Slight buffer to account for any small discrepancies
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+    </script>
+	
+</body>
+</html>
