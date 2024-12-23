@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Riyadh Motors</title>
+    <link rel="stylesheet" href="styles/about-styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="welcome.html" class="logo-link"></a>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="language-switch">
+            <a href="#arabic">العربية</a>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="content">
+            <div class="text">
+                <h1>About Riyadh Motors</h1>
+                <p>Riyadh Motors, established with a passion for redefining the automotive marketplace, has emerged as a beacon of excellence in the industry. Our platform is more than just a marketplace; it's a commitment to providing a comprehensive and unparalleled automotive experience for both buyers and sellers.</p>
+                <p>We take pride in our carefully curated selection of vehicles, ensuring that each item listed on Riyadh Motors meets the highest standards of quality, reliability, and performance. From luxury vehicles to budget-friendly options, Riyadh Motors offers a diverse array of choices to cater to the unique preferences and needs of our discerning customers.</p>
+                <p>At the heart of Riyadh Motors is a commitment to transparency. We believe that trust is the foundation of any successful transaction, and our platform is designed with this principle in mind. Each vehicle's profile provides detailed information, allowing buyers to make informed decisions. Genuine user reviews further contribute to transparency, offering valuable insights into the experiences of fellow automotive enthusiasts.</p>
+                <p>Riyadh Motors is not just a marketplace; it's a community where trust and transparency converge to create a seamless and enjoyable experience for all users.</p>
+                <p>© Riyadh Motors / 2024 IMAM / CCIS</p>
+            </div>
+            <div class="handshake-image">
+                <img src="styles/handshake.png" alt="Handshake symbolizing cooperation and agreement">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Riyadh Motors / 2024 IMAM / CCIS</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.querySelector('footer');
+            if (window.innerHeight + window.pageYOffset >= document.body.scrollHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
