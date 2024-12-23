@@ -169,3 +169,39 @@ footer {
     bottom: 0;
     z-index: 1000; /* Ensures the footer stays on top */
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+    .logo-link {
+        width: 80px; /* Adjust logo size */
+        height: 60px; /* Adjust logo height */
+    }
+    .top-text, .left-right-container {
+        margin: 10px 0; /* Adjust margin for mobile */
+    }
+    .left-right-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+    .left-text, .right-text {
+        margin: 10px 0; /* Adjust spacing */
+    }
+    .car img {
+        width: 100%; /* Full width for images */
+    }
+    body {
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-content {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    body {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+}
+
