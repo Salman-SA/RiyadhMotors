@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Riyadh Motors</title>
+    <link rel="stylesheet" href="styles/home-styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html" class="logo-link"></a>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="language-switch">
+            <a href="#arabic">العربية</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="content">
+            <div class="car">
+                <img src="styles/imgs/mercedes.jpg" alt="Mercedes S Class">
+                <h2>Mercedes S Class</h2>
+                <p>743,653 SAR</p>
+                <button onclick="location.href='https://www.mercedes-benz.com/en/'">Review details</button>
+            </div>
+            <div class="car">
+                <img src="styles/imgs/bmw.jpg" alt="BMW 7 Series">
+                <h2>BMW 7 Series</h2>
+                <p>540,421 SAR</p>
+                <button onclick="location.href='https://www.bmw.com/en/index.html'">Review details</button>
+            </div>
+            <!-- Add more car listings if needed for testing -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© Riyadh Motors / 2024 IMAM / CCIS</p>
+    </footer>
+	
+<script>
+    window.addEventListener('scroll', function() {
+        var footer = document.querySelector('footer');
+        var contentHeight = document.documentElement.scrollHeight;
+        var windowHeight = window.innerHeight;
+        var scrollPosition = window.pageYOffset;
+
+        if ((windowHeight + scrollPosition) >= (contentHeight - 10)) { // Slight buffer to account for any small discrepancies
+            footer.style.display = 'block';
+        } else {
+            footer.style.display = 'none';
+        }
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

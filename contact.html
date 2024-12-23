@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Riyadh Motors</title>
+    <link rel="stylesheet" href="styles/contact-styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html" class="logo-link"></a>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="language-switch">
+            <a href="#arabic">العربية</a>
+        </div>
+    </nav>
+
+    <section id="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <label for="message">Your message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <label for="photo">Upload a photo (optional):</label>
+                <div class="upload-container">
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Riyadh Motors / 2024 IMAM / CCIS</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.querySelector('footer');
+            if (window.innerHeight + window.pageYOffset >= document.body.scrollHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
