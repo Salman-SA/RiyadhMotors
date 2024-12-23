@@ -1,0 +1,158 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('welcome-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #000; /* Fallback color */
+}
+
+nav {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent); /* Less intense gradient */
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em; /* Adjust padding */
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensures the nav stays on top */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    background: url('logo.png') no-repeat left center; /* Logo as a background image */
+    background-size: contain;
+    height: 100px; /* Increase height */
+    width: 140px; /* Increase width */
+    text-decoration: none;
+    margin-right: 20px; /* Add space between the logo and the navigation links */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    flex-grow: 1; /* Allows the ul to take available space */
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+}
+
+nav ul li {
+    margin: 0 15px; /* Increase margin to fit more items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em; /* Increase font size */
+    transition: color 0.3s, font-weight 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+nav ul li a:hover {
+    color: #00000; /* Change to gold color on hover */
+    font-weight: bold; /* Make the font bold on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Add a subtle background color */
+    padding: 0.5em; /* Add some padding for effect */
+}
+
+.language-switch {
+    margin-left: auto; /* Push the language switch to the far right */
+    margin-right: 20px; /* Shift slightly to the left */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.language-switch a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em; /* Increase font size */
+    transition: color 0.3s, font-weight 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+.language-switch a:hover {
+    color: #00000; /* Change to gold color on hover */
+    font-weight: bold; /* Make the font bold on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Add a subtle background color */
+    padding: 0.5em; /* Add some padding for effect */
+}
+
+
+header {
+    display: none; /* Hide the header if not needed */
+}
+
+#welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    color: white;
+    height: calc(100vh - 60px); /* Adjust height to account for fixed nav and footer */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.welcome-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 2em;
+    border-radius: 10px;
+    width: 90%; /* Increase width to stretch the box */
+    max-width: 1200px; /* Adjust max width to fit content properly */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-text {
+    text-align: center;
+    font-size: 1.5em; /* Increase font size */
+    margin-bottom: 2em; /* Add space between top and left-right text */
+}
+
+.left-right-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-text, .right-text {
+    width: 48%; /* Adjust widths to fit side by side */
+}
+
+.left-text h3, .right-text h3 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.left-text p, .right-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+
+footer {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent); /* Less intense gradient */
+    color: white; /* Ensure footer text is white */
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000; /* Ensures the footer stays on top */
+}
