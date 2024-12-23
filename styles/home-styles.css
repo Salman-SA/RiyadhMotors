@@ -128,7 +128,7 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 100%; /* Adjust width to fit content */
+    width: 80%; /* Adjust width to fit content */
     max-width: 1200px; /* Set a max width for content */
     margin: 20px 0; /* Center content */
 }
