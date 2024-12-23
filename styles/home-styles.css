@@ -28,7 +28,7 @@ nav {
     z-index: 1000; /* Ensures the nav stays on top */
     box-sizing: border-box; /* Include padding in width calculation */
     position: relative; /* Make sure the pseudo-element is positioned relative to the nav */
-	overflow: hidden; /* Hide any overflowed content */
+	
 
 }
 
